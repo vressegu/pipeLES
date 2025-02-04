@@ -158,7 +158,7 @@ sed -i -e 's/bulkVelocity/'$bulkVelocity'/g' system/fvOptions
 
 
 cp ./constant/perturbUDict.org  ./constant/perturbUDict
-pipeR=$(echo 'print( '$pipeDiameter ' /2.0)' |python2)
+pipeR=$(echo 'print( '$pipeDiameter ' /2.0)' |python3)
 sed -i -e 's/RADIUS/'$pipeR'/g' constant/perturbUDict
 
 
