@@ -19,14 +19,17 @@ simulationType LES;
 
 LES
 {
-    turbulence      on;
+    LESModel        Smagorinsky;
 
-    LESModel        WALE;
-
-    printCoeffs     on;
+    turbulence		on;
+    printCoeffs		on;
 
     delta           cubeRootVol;
-	
+
+    cubeRootVolCoeffs
+    {
+        deltaCoeff      1;
+    }
 
 }
 
