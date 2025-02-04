@@ -11,14 +11,16 @@
 
 
 # Load modules
-module use /scratch/mathlab/packages/modules
-module load openfoam/2012
+# module use /scratch/mathlab/packages/modules
+# module load openfoam/2012
 
 export FOAM_USER_APPBIN=/home/vresseguier/OpenFOAM/vresseguier-v2212/platforms/linux64GccDPInt32Opt/bin
 export FOAM_USER_LIBBIN=/home/vresseguier/OpenFOAM/vresseguier-v2212/platforms/linux64GccDPInt32Opt/lib
 
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$FOAM_USER_LIBBIN
 export PATH=$PATH:$FOAM_USER_APPBIN
+
+SLURM_NTASKS=1
 
 
 # Set solver

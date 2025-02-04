@@ -73,8 +73,8 @@ echo
 echo " Running case in $workDir"		
 
 # Load modules
-module use /scratch/mathlab/packages/modules
-module load openfoam/2012
+# module use /scratch/mathlab/packages/modules
+# module load openfoam/2012
 
 
 # Make grid
@@ -123,7 +123,7 @@ echo " Done."
 # Submit snappy
 echo
 echo " Submitting Snappy..."
-FIRST=`sbatch --parsable scheduler/runSnappy.sh`
+# FIRST=`sbatch --parsable scheduler/runSnappy.sh`
 echo " Done."
 fi
 
@@ -217,11 +217,11 @@ echo " Done."
 # Submit foam
 echo
 echo " Submitting Foam..."
-if [ $FIRST ]; then
-	SECOND=`sbatch --dependency=afterok:$FIRST scheduler/runFoam.sh`
-else
-	SECOND=`sbatch scheduler/runFoam.sh`
-fi
+# if [ $FIRST ]; then
+# 	SECOND=`sbatch --dependency=afterok:$FIRST scheduler/runFoam.sh`
+# else
+# 	SECOND=`sbatch scheduler/runFoam.sh`
+# fi
 echo " Done."
 fi
 echo
