@@ -12,7 +12,7 @@ projectAccount=
 foamRelease=2012 #(v1906)
 
 # Run options
-runMesh=n
+runMesh=y
 runFoam=y
 
 # Grid setup
@@ -35,7 +35,7 @@ maxCourant=0.5
 perturbFlow=y
 writeInterval=1e-1
 writeAll=n
-restartRun=y
+restartRun=n
 decomposeCase=n
 cleanProcessors=n
 reconstructAll=n
