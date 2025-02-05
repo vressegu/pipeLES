@@ -1,6 +1,5 @@
 #! /usr/bin/env bash
-#SBATCH --job-name=Meshpipe
-#SBATCH --account=ressequierv
+#SBATCH --job-name="Meshpipe"
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=nCoresSnappy
 #SBATCH --time=wallTimeSnappy
