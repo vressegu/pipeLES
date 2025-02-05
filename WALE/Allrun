@@ -33,12 +33,11 @@ timeStep=5e-5
 adjustTimeStep=y
 maxCourant=0.5
 perturbFlow=y
-writeInterval=1e-1
-writeAll=n
+writeAll=y
 restartRun=y
-decomposeCase=n
-cleanProcessors=n
-reconstructAll=n
+decomposeCase=y
+cleanProcessors=y
+reconstructAll=y
 
 # Postprocess setup
 writeMonitorsFrequency=1e-4
