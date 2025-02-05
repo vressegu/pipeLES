@@ -1,18 +1,19 @@
-#!/bin/bash
-#SBATCH --job-name=LES
-#SBATCH --account=gspasov
-#SBATCH --partition=regular2
+#! /usr/bin/env bash
+#SBATCH --job-name=LESpipe
+#SBATCH --account=ressequierv
 #SBATCH --nodes=nNodesFoam
 #SBATCH --ntasks-per-node=nCoresFoam
 #SBATCH --time=wallTimeFoam
 #SBATCH --mem=memoryFoamGB
-#SBATCH --error FOAM.err
-#SBATCH --output FOAM.out
+#SBATCH --error LESpipe.err
+#SBATCH --output LESpipe.out
+#SBATCH -p inrae
 
 
 # Load modules
 module load cv-standard
 module load openmpi/psm2/gcc61/3.1.6
+module load python/3.5.2
 
 source  /home/ressequierv/Apps/OpenFOAM-v2106/etc/bashrc
 export FOAM_USER_APPBIN=/home/ressequierv/Apps/OpenFOAM-v2106/platforms/linux64GccDPInt32Opt/bin

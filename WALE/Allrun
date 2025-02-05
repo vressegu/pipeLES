@@ -73,8 +73,11 @@ echo
 echo " Running case in $workDir"		
 
 # Load modules
-module use /scratch/mathlab/packages/modules
-module load openfoam/2012
+module load cv-standard
+module load openmpi/psm2/gcc61/3.1.6
+module load python/3.5.2
+
+source  /home/ressequierv/Apps/OpenFOAM-v2106/etc/bashrc
 
 
 # Make grid
