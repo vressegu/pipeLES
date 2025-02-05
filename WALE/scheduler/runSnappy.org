@@ -1,18 +1,19 @@
-#!/bin/bash
-#SBATCH --job-name=Georgi
-#SBATCH --account=gspasov
-#SBATCH --partition=regular1
+#! /usr/bin/env bash
+#SBATCH --job-name=Meshpipe
+#SBATCH --account=ressequierv
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=nCoresSnappy
 #SBATCH --time=wallTimeSnappy
 #SBATCH --mem=memorySnappyGB
-#SBATCH --error FOAM.err
-#SBATCH --output FOAM.out
+#SBATCH --error Meshpipe.err
+#SBATCH --output Meshpipe.out
+#SBATCH -p inrae
 
 
 # Load modules
 module load cv-standard
 module load openmpi/psm2/gcc61/3.1.6
+module load python/3.5.2
 
 source  /home/ressequierv/Apps/OpenFOAM-v2106/etc/bashrc
 export FOAM_USER_APPBIN=/home/ressequierv/Apps/OpenFOAM-v2106/platforms/linux64GccDPInt32Opt/bin
@@ -70,3 +71,5 @@ wait $!
 checkMesh -constant > checkMesh.log
 wait $!
 rm -f 0/pointLevel 0/cellLevel *.obj
+
+exit
