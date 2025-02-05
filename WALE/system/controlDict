@@ -29,7 +29,7 @@ deltaT          5e-5;
 
 writeControl    adjustableRunTime;
 
-writeInterval   1e-4;
+writeInterval   1e-1;
 
 purgeWrite      1;
 
@@ -170,7 +170,7 @@ functions
  		libs ("libfieldFunctionObjects.so");
 
 		writeControl    	adjustableRunTime;
-        writeInterval   	1e-4;
+        writeInterval   	1e-1;
 
 		timeStart			1e-3;
 		restartOnRestart    true;

@@ -1,5 +1,6 @@
 #! /usr/bin/env bash
-#SBATCH --job-name="LESpipe"
+#SBATCH --job-name=LESpipe
+#SBATCH --account=ressequierv
 #SBATCH --nodes=nNodesFoam
 #SBATCH --ntasks-per-node=nCoresFoam
 #SBATCH --time=wallTimeFoam
