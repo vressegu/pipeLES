@@ -1,12 +1,7 @@
-# 1 "Make/options"
-# 1 "<built-in>"
-# 1 "<command-line>"
-
-
-
-
-
-
+# 0 "Make/options"
+# 0 "<built-in>"
+# 0 "<command-line>"
+# 8 "<command-line>"
 # 1 "/usr/include/stdc-predef.h" 1 3 4
 
 # 17 "/usr/include/stdc-predef.h" 3 4
@@ -29,11 +24,19 @@
 
 
 
+# 45 "/usr/include/stdc-predef.h" 3 4
+
+# 55 "/usr/include/stdc-predef.h" 3 4
 
 
 
 
-# 6 "<command-line>" 2
+
+
+
+
+
+# 8 "<command-line>" 2
 # 1 "Make/options"
 EXE_INC = -I$(LIB_SRC)/meshTools/lnInclude -I$(LIB_SRC)/finiteVolume/lnInclude 
 
@@ -41,3 +44,5 @@ EXE_INC = -I$(LIB_SRC)/meshTools/lnInclude -I$(LIB_SRC)/finiteVolume/lnInclude
 
 
 EXE_LIBS = -lmeshTools -lfiniteVolume 
+
+# options
