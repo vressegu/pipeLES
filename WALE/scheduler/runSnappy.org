@@ -71,3 +71,5 @@ wait $!
 checkMesh -constant > checkMesh.log
 wait $!
 rm -f 0/pointLevel 0/cellLevel *.obj
+
+exit

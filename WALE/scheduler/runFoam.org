@@ -156,3 +156,5 @@ if [ "writeIsoSurfaces" = "y" ]; then
         echo "postProcessing/isoSurfaces does not exist..." >> runFoam.log
     fi
 fi
+
+exit
